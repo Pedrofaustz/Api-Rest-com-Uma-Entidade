@@ -1,21 +1,29 @@
 📌 Tecnologias Utilizadas
 .Java
-.Spring Boot
-.Spring Web
-.Spring Data JPA
+/ Spring Boot
+/ Spring Data JPA
+<br>
 
 🗂️ O projeto está organizado da seguinte forma:
-
+<br>
 Entity
- User: Classe que representa a entidade principal da aplicação.
+<br>
+   User: Classe que representa a entidade principal da aplicação.
+<br>
 Repository
- RepositoryUser: Interface responsável pela comunicação com o banco de dados.
+<br>
+   RepositoryUser: Interface responsável pela comunicação com o banco de dados.
+ <br>
 Controller
- ControllerAll: Classe responsável por expor os endpoints da API.
+<br>
+   ControllerAll: Classe responsável por expor os endpoints da API.
+ <br>
 
 ⚙️ Funcionalidades
+<br>
 
 Atualmente, a API permite operações básicas relacionadas à entidade User:
+<br>
 /user/test - Para visualizar o funcionamento do Tomcat
 
 
