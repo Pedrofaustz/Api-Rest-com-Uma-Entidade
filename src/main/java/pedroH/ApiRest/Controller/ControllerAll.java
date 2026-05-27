@@ -1,5 +1,6 @@
 package pedroH.ApiRest.Controller;
 
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 import pedroH.ApiRest.Entity.Usuario;
 import pedroH.ApiRest.Repository.UserRepository;
@@ -21,7 +22,7 @@ public class ControllerAll {
     }
 
     @PostMapping("/criar")
-    public Usuario criate(@RequestBody Usuario usuario) {
+    public Usuario criate(@Valid @RequestBody Usuario usuario) {
         return userRepository.save(usuario);
     }
 
