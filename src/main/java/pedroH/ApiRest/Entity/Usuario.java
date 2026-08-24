@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.Setter;
 import jakarta.validation.constraints.*;
 
+import java.util.ArrayList;
+
 @Entity
 @Table(name = "BandoDeDados")
 
@@ -22,4 +24,6 @@ public class Usuario {
     @Max(value = 120, message = "Idade Muito Alta") // Idades acima de 120 não sao permitidas
     @Min(value = 0, message = "Idade não pode ser negativa") // Idade = 0 É Válida!
     private int idade;
+
+    // List<Tarefas> tarefas = new ArrayList<>();
 }
